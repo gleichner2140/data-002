@@ -1,0 +1,9 @@
+﻿//样式主题选择 , 1 为 flat , 2 为 Clean ,3 为 vertical (vertical主题无手机版,vertical 在手机上默认显示为Clean) ,
+//默认使用主题1 flat
+style = 1;
+
+//是否开启example,0 关闭 , 1 开启
+example = 1;
+
+//是否开启Word Origin & History, 0 关闭 , 1 开启
+origin = 1;

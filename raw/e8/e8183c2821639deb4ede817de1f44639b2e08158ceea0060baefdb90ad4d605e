@@ -1,0 +1,194 @@
+.return-phrase .l span.i {
+	color: #057d83;
+	font-weight: bold;
+}
+
+/* .return-phrase .l span.i::before {
+	content: '『';
+	color: #a50000;
+} */
+
+.return-phrase .l span.i:after {
+	content: '➤';
+	color: #a50000;
+}
+
+/*音标*/
+
+.phone {
+	color: sienna;
+	display: block;
+	background-color: #F1F1FF;
+}
+
+/*例句*/
+
+.exam {
+	display: block;
+	margin-left: 14px;
+}
+
+/*上标*/
+
+.upper {
+	vertical-align: super;
+	font-size: 60%
+}
+
+/*英语例句*/
+
+.f {
+	/* color:darkblue; */
+	color: #616060;
+}
+
+/*汉语例句*/
+
+.n {
+	/* color:slategray; */
+	color: #007e73;
+	display: block;
+	/* margin-left: 5px; */
+}
+
+/*换行*/
+
+.l {
+	display: block;
+}
+
+/*词性*/
+
+.pos {
+	display: inline-block;
+	/* margin-left:8px; */
+	color: rgb(255, 255, 255);
+	background: rgb(189, 0, 0);
+	font-size: 85%;
+	border: #a50000;
+	margin-top: 1px;
+	border-radius: 3px;
+	padding: 2px;
+}
+
+/*词性词组转换*/
+
+.trs,
+.phrs {
+	margin-top: 8px;
+}
+
+/*词组*/
+
+.phrs {
+	display: block;
+	margin-left: 10px;
+}
+
+.phr {
+	/* color: darkblue; */
+	color: rgb(35, 70, 105);
+}
+
+.des {
+	display: block;
+	margin-left: 8px;
+	color: rgb(27, 116, 116);
+}
+
+.phrs .tr {
+	display: block;
+	margin-left: 8px;
+	color: rgb(40, 131, 131);
+}
+
+/*号码，点*/
+
+.entryNum {
+	font-weight: bold;
+	color: #a50000;
+	/*display:inline;*/
+	display: none;
+	font-weight: bold;
+	margin-right: 3px
+}
+
+.entryDot {
+	font-weight: bold;
+	color: #a50000;
+	display: inline;
+	/*display:none;*/
+	font-weight: bold;
+	margin-right: 3px
+}
+
+/*
+.tr{
+	display:block;
+}
+*/
+
+/*同义词 变形 反义词*/
+
+.tongyici {
+	margin-left: 5px;
+	font-weight: bold;
+	display: block;
+}
+
+.fanyici {
+	margin-left: 5px;
+	font-weight: bold;
+	display: block;
+}
+
+.bianxing {
+	margin-left: 5px;
+	font-weight: bold;
+	display: block;
+}
+
+.anto {
+	margin-top: 5px;
+	margin-left: 10px;
+	display: block;
+}
+
+.wf {
+	margin-top: 5px;
+	margin-left: 10px;
+	display: block;
+}
+
+.syno {
+	margin-top: 5px;
+	margin-left: 10px;
+	display: block;
+}
+
+.anto .i {
+	font-style: italic;
+	display: block;
+}
+
+.wf .i {
+	font-style: italic;
+	display: block;
+}
+
+.syno .i {
+	font-style: italic;
+	display: block;
+}
+
+/*词组链接*/
+
+.ref_title {
+	margin-right: 5;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.reference {
+	font-style: italic;
+}

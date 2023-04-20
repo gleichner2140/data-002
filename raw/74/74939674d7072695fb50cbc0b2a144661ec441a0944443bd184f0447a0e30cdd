@@ -1,0 +1,23 @@
+主题简介：
+ 
+一、你可以在页首部分的header.php文件中找到<a href="http://feed.feedsky.com/wantfee"><p>471Subscribers</p></a>这一行代码，这是我的博客的RSS地址和订阅数字，你需要将它更改为你自己的。
+ 
+二、Slide show（滑动展示区域）中的图片也包含在images文件夹中，大小为宽度600像素宽、317像素高，你如果需要个性化的图片，可以自己制作一张，放入images文件夹中，替换现有的图片，当然，不要更改图片名称，这样图片才能够正确的显示出来。（如果你懂一些html和css代码，不用我说，你知道怎么在index.php文件中修改。）
+ 
+三、如果你的日志很长，可以添加<!–more–>标签，它会被替换为继续阅读的图片样式。
+ 
+四、如果你需要在日志中提供下载，可给<p>标签添加<p class="download">类，它会转变为下载文件的图片样式。
+ 
+五、日志中的html、css、php代码需要放入到<pre class="brush: xml;"></pre>或<pre class="brush:css;"></pre>或<pre class="brush: php;"></pre>中，代码将转换为预先设定的样式。
+ 
+六、日志内的小标题统一为<h3>级别的标题样式，已经做了预先的样式设定。
+ 
+七、主题需要的Breadcrumb NavXT和WordPress Related Posts插件也已经放入到了主题包中，你只需要安装到wordpress后台就可以了。
+ 
+八、如果你希望建立存档页面，只需在wordpress后台新建一个页面，然后右侧"模板"下拉菜单中选择"Archives"点击确定就可以了。预先建立好的页面模板会帮助你列出你博客上的所有文章。
+ 
+九、关于页首分类标签，只需要将主题包中的category-xx.php文件名称中的xx数字更改为你的分类页面的数字，具体的操作方法和原理可以查看《如何创建wordpress分类页面》这篇文章。
+ 
+十、GreenGaint主题包中的function.php文件提供了最新评论、最新日志、评论最多的文章、WP-PageNavi（页面导航）、Trackback List（引用列表）、WP-PostViews（日志浏览次数）的功能，可以直接使用< ?php wp_pagenavi(); ?>和< ?php if(function_exists('the_views')) {the_views();} ?>语句来调用页面导航和日志浏览次数，使用和以及语句来分别调用评论最多的文章、最新评论以及最新日志列表。无需安装额外的插件。
+ 
+十一、页首的分类标签及Logo的PSD源文件已经整理好，提供给大家下载，方便大家进行个性化的更改。

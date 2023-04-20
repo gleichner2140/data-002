@@ -1,0 +1,76 @@
+<?php 
+/*
+* ----------------------------------------------------------------------------------------------------
+* Metaboxes for slidershow
+* @PACKAGE BY HAWKTHEME
+* ----------------------------------------------------------------------------------------------------
+*/
+$config = array(
+	'title' => esc_html__('幻灯设置','HK'),
+	'id' => 'slidershow_meta_boxes',
+	'pages' => array('slidershow'),
+	'callback' => '',
+	'context' => 'normal',
+	'priority' => 'high',
+);
+
+
+$options = array(
+
+	array(
+			'name' => esc_html__('使用标题','HK'),
+			'desc' => esc_html__('启用在幻灯的标题。','HK'),
+			'id' => 'enable_slidershow_title',
+			'std' => 0,
+			'type' => 'checkbox',
+	),
+
+	array(
+			'name' => esc_html__('使用描述','HK'),
+			'desc' => esc_html__('启用在幻灯的描述。','HK'),
+			'id' => 'enable_slidershow_desc',
+			'std' => 0,
+			'type' => 'checkbox',
+	),
+
+	array(
+			'name' => esc_html__('描述','HK'),
+			'desc' => esc_html__('这是幻灯的描述。','HK'),
+			'id' => 'slidershow_desc',
+			'std' => '',
+			'rows' => '5',
+			'type' => 'textarea',
+	),
+
+	array(
+			'name' => esc_html__('外部链接','HK'),
+			'desc' => esc_html__('输入你自定义链接，前一个URL：http://google.com. If you do not want to use this, just leave it blank.','HK'),
+			'id' => 'slidershow_external_link',
+			'std' => '',
+			'size' => '80',
+			'type' => 'text',
+	),
+
+	array(
+			'name' => esc_html__('特色图像','HK'),
+			'desc' => __('要上传图片点击“上传图片”按钮。或者你可以输入图像的URL。','HK'),
+			'id' => 'slidershow_image',
+			'std' => '',
+			'size' => '80',
+			'type' => 'upload',
+	),
+
+	array(
+			'name' => esc_html__('缩略图','HK'),
+			'desc' => __('当你使用nivo幻灯，你需要上传为缩略图，尺寸是：54px * 40px。','HK'),
+			'id' => 'slidershow_thumbnail',
+			'std' => '',
+			'size' => '80',
+			'class' => 'noborder',
+			'type' => 'upload',
+	),
+);
+
+new meta_boxes_generator($config,$options);
+
+?>

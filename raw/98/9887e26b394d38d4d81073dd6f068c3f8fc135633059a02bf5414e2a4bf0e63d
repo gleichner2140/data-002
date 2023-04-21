@@ -1,0 +1,144 @@
+1.指定本机java环境
+Windows-->preferences-->java-->Insetallel JREs
+右侧 单击ADD standard VM-->Next -->Directory-->Finash
+点选 新增jre环境-->点击OK
+ 
+2.更换背景颜色 个人感觉白色比较刺激眼睛 可选择性更换
+Windows-->preferences-->General-->Editors-->Text Editors
+右侧左下方 选中 Background color后 单击 System default选项框后 点击color 选择颜色后 -->OK
+ 
+3.取消servers中myeclipse自带的tomcat 开发中常常需要到相应的 tomcat目录中查看，
+指定本机自带tomcat 可以更方便的操作
+Windows-->preferences-->MyEclipse-->Servers-->Tomcat
+根据个人选择指定tomcat目录 并点选上方的 radio Enable 选项-->OK
+取消server中的tomcat
+Windows-->preferences-->MyEclipse-->Servers-->Integrated Sandbox-->Myeclipse Tomcat 6
+点击disable
+ 
+4.取消自动validation 有一堆，什么xml、jsp、jsf、js等等，
+我们没有必要全部都去自动校验一下，只是需要的时候才会手工校验一下！
+取消方法：
+windows-->perferences-->myeclipse–->validation
+除开Manual下面的复选框全部选中之外，其他全部不选
+手工验证方法：
+在要验证的文件上，单击鼠标右键--->myeclipse--->run validation
+ 
+5.取消Eclipse拼写检查
+拼写检查会给我们带来不少的麻烦，我们的方法命名都会是单词的缩写，他也会提示有错，所以最好去掉，没有多大的用处
+windows--->perferences--->general-->editors->Text Editors->spelling
+点击enable spell check
+ 
+6.jsp xml html
+windows--->perferences--->general--->editors->file associations
+在下方选择一种编辑器，我选择的是 myeclipse jsp/xml/html editor 然后点击左边的default按钮
+ 
+7.取消Maven更新(启动更新)
+Window > Preferences > Myeclipse > Maven4Myeclipse 禁用Download repository index updates on startup
+ 
+8. 修改jsp文件内容的编码
+window->Preferences ->myeclipse->Files and Editors->jsp
+ 
+9. hovers javascript hovers (鼠标悬停提示关闭) 鼠标悬停提示关闭 
+Window－>preference －>Myeclipse －>Files and Editors－> javascript －> edit －> 选中Hover  去掉勾选Combined Hove
+java ：   Window－>preference －>java－>Editor－>Hovers 去掉勾选Combined Hover Bug模式调试 勾选上Variable Values
+ 
+10. 修改新建文件java/js/html/properties文件编码
+window->Preferences -> General->Content Type
+把下面的Default Character Set的值改成UTF-8
+ 
+11.个人习惯：Window --> Preferences --> General --> Workspace，文字编码改为UTF-8。
+ 
+12.修改右键 
+windows –> Customize Perspective  选项
+ 
+13.myeclipse 内存溢出
+ 
+打开MyEclipse目录下的myeclipse.ini文件 在后面修改下面几个属性
+-vmargs
+-Xms512m              （ JAVA能够分配的内存）
+-Xmx512m              （ JAVA能够分配的最大内存）
+-XX:PermSize=512M      （非堆内存初始值）
+-XX:MaxPermSize=512M   （非堆内存最大值）
+-XX:ReservedCodeCacheSize=64m  （eclipse缓存）
+ 
+14.jquery.js -> 鼠标右键 -> MyEclipse -> manage validation -> 左面点击 -> Excluded resources -> 找到jquery.js -> 打上钩 -> apply
+ 
+15.根据个人情况修改myeclipse的启动项
+ 
+windows–>perferences–>general–>startup and shutdown
+ 
+16. derby 关闭
+ 
+ 在MyEclipse安装目录下打开configuration\org.eclipse.equinox.simpleconfigurator\bundles.info 搜索derby找到com.genuitec.eclipse.derby,11.0.0.me201211281531,plugins/com.genuitec.eclipse.derby_11.0.0.me201211281531.jar,4,false 把它注释掉即（#com.genuitec.eclipse.derby,11.0.0.me201211281531,plugins/com.
+ 
+17:  启动功能介绍和样例(红色为需要保留的文件,此为本人样例,请按需选择)
+ 
+ 
+ 
+1 Automatic Updates Scheduler //自动升级调度   
+2 MyEclipse QuickSetup //快速启动   
+3 MyEclipse Derby //derby是一个开源数据库的名字
+4 MyEclipse EASIE Geronimo 1 //同色都是应用服务器的名字   
+5 MyEclipse EASIE Geronimo 2    
+6 MyEclipse EASIE JBOSS 2    
+7 MyEclipse EASIE JBOSS 3    
+8 MyEclipse EASIE JBOSS 4    
+9 MyEclipse EASIE JBOSS 5    
+10 MyEclipse EASIE JBOSS    
+11 MyEclipse EASIE Jetty 4    
+12 MyEclipse EASIE Jetty 5    
+13 MyEclipse EASIE Jetty 6    
+14 MyEclipse EASIE Jetty    
+15 MyEclipse EASIE JOnAS 3    
+16 MyEclipse EASIE JOnAS 4    
+17 MyEclipse EASIE JOnAS    
+18 MyEclipse EASIE JRun 4    
+19 MyEclipse EASIE JRun    
+20 MyEclipse EASIE Oracle 10 AS    
+21 MyEclipse EASIE Oracle 9 AS    
+22 MyEclipse EASIE Oracle AS    
+23 MyEclipse EASIE Orion 1    
+24 MyEclipse EASIE Orion 2    
+25 MyEclipse EASIE Resin 2    
+26 MyEclipse EASIE Resin 3    
+27 MyEclipse EASIE Resin    
+28 MyEclipse EASIE Sun 8.x    
+29 MyEclipse EASIE Sun 8    
+30 MyEclipse EASIE Sun 9    
+31 MyEclipse EASIE Glassfish 2    
+32 MyEclipse EASIE Glassfish 1    
+33 MyEclipse EASIE Sun One    
+34 MyEclipse EASIE MyEclipse Tomcat 6 Server    
+35 MyEclipse EASIE Tomcat 4    
+36 MyEclipse EASIE Tomcat 5    
+37 MyEclipse EASIE Tomcat 6    
+38 MyEclipse EASIE Tomcat    
+39 MyEclipse EASIE WebLogic 10    
+40 MyEclipse EASIE WebLogic 6    
+41 MyEclipse EASIE WebLogic 7    
+42 MyEclipse EASIE WebLogic 8    
+43 MyEclipse EASIE WebLogic 9    
+44 MyEclipse EASIE WebLogic    
+45 MyEclipse EASIE WebSphere 5    
+46 MyEclipse EASIE WebSphere 6.1    
+47 MyEclipse EASIE WebSphere 6    
+48 MyEclipse EASIE WebSphere 4    
+49 MyEclipse Examples //样例   
+50 MyEclipse Memory Monitor //内存监控   
+51 MyEclipse Tapestry Integration //插件集成   
+52 MyEclipse JSP Debug Tooling //jsp调试插件   
+53 MyEclipse File Creation Wizards //文件创建程序   
+54 ICEfaces Integration for MyEclipse //基于Ajax的JSF开发框架()
+55 MyEclipse Backward Compatibility //后台功能   
+56 MyEclipse Perspective Plug-in //透视图插件   
+57 Pluse Collaboration Control Center //Eclipse的网页管理中心
+58 eclipse-cs 4.x.x -> 5.0.0 Migration Plug-in  //Eclipse插件兼容组件
+59 Mozilla Debug UI Plug-in(Incubation) //Mozilla调试插件（Mozilla是一款浏览器)   
+60 Dynamic Languages ToolKit Core UI //对入PHP等动态语言支持的用户接口
+61 WTP Webservice UI Plug-in //Web 服务视图插件   
+62 JavaServer Faces Tools - Core //jsf工具核心包   
+63 Automatic Updates Scheduler //自动更新
+64 Service policy  //Web提供的服务性能目标定义,自动管理
+65 Atfdebug Plug-in(Incubation)  //动态语言的调试工具
+66 Auxiliary Web Module Support for MeEclipse// 辅助的Web模块支持.(可能是Struts等文件自动添加)
+67 JSF Editor Preview Support for MyEclipse//jsf编辑器 

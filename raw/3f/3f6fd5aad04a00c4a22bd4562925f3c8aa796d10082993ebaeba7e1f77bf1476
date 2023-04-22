@@ -1,0 +1,3 @@
+SHOW VARIABLES like "character%"
+
+关闭MySQL服务，在MySQL安装路径下的my.ini文件查找set，server并改成utf8
